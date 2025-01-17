@@ -1,5 +1,5 @@
 
-# Hasura Model Summary Script
+# Hasura Model Summary 
 
 This script fetches metadata from multiple Hasura endpoints, calculates the total number of models (tables, views, collections, and logical models), and outputs the results into a CSV file.
 
