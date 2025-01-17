@@ -1,3 +1,4 @@
 Endpoint,TotalTablesAndViews,TotalCollections,TotalLogicalModels,TotalModels
 https://immune-quetzal-28.hasura.app/v1/graphql,11,0,1,12
 https://master-koala-77.hasura.app/v1/graphql,22,0,3,25
+Total,33,0,4,37

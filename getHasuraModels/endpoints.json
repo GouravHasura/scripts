@@ -1,10 +1,11 @@
 [
     {
-        "endpoint": "endpoint2",
-        "secret": "yoursecret1"
-    },
-    {
-        "endpoint": "endpoint1",
-        "secret": "yoursecret2"
-    }
+        "endpoint": "https://endpoint1.hasura.app/v1/graphql",
+        "secret": "your-admin-secret-1"
+      },
+      {
+        "endpoint": "https://endpoint2.hasura.app/v1/graphql",
+        "secret": "your-admin-secret-2"
+      }
+    
 ]

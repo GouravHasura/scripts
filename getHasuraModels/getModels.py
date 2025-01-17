@@ -76,6 +76,23 @@ def write_to_csv(data, output_file):
         writer.writeheader()
         writer.writerows(data)
 
+        # Adding a total row for all models
+        total_tables_and_views = sum(row["TotalTablesAndViews"] for row in data)
+        total_collections = sum(row["TotalCollections"] for row in data)
+        total_logical_models = sum(row["TotalLogicalModels"] for row in data)
+        total_models = sum(row["TotalModels"] for row in data)
+
+        writer.writerow({
+            "Endpoint": "Total",
+            "TotalTablesAndViews": total_tables_and_views,
+            "TotalCollections": total_collections,
+            "TotalLogicalModels": total_logical_models,
+            "TotalModels": total_models
+        })
+
+    # Print total models in the terminal
+    print(f"Total Models: {total_models}")
+
 
 def main():
     # Load endpoints and secrets from a JSON file

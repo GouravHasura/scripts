@@ -1,5 +1,5 @@
 
-# Hasura Model Summary Script
+# Hasura Model Summary 
 
 This script fetches metadata from multiple Hasura endpoints, calculates the total number of models (tables, views, collections, and logical models), and outputs the results into a CSV file.
 
@@ -21,14 +21,20 @@ This script fetches metadata from multiple Hasura endpoints, calculates the tota
    ]
    ```
 
-2. **Run the Script:**
+2. **Install Python dependencies**:
+   - Install the required Python packages by running:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+3. **Run the Script:**
    - Execute the script with the following command:
    
    ```bash
-   python3 models.py
+   python3 getModels.py
    ```
 
-3. **Check the CSV File:**
+4. **Check the CSV File:**
    - After running the script, check the generated CSV file for the results. It will contain the summarized model count for each endpoint.
 
 ## Output CSV Format
@@ -38,3 +44,12 @@ The CSV file will include the following columns:
 - **DataSource Name**: The name of the data source.
 - **Model Type**: The type of model (Tables, Views, Collections, Logical Models).
 - **Model Count**: The total count for each model type.
+
+Each row represents one of your Hasura endpoints and the corresponding model summary.
+
+---
+
+## Requirements
+
+- Python 3.x
+- `requests` library (listed in `requirements.txt`)
