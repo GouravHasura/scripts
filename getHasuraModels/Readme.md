@@ -25,7 +25,7 @@ This script fetches metadata from multiple Hasura endpoints, calculates the tota
    - Execute the script with the following command:
    
    ```bash
-   python3 models.py
+   python3 getModels.py
    ```
 
 3. **Check the CSV File:**
