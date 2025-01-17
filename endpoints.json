@@ -1,0 +1,10 @@
+[
+    {
+        "endpoint": "endpoint2",
+        "secret": "yoursecret1"
+    },
+    {
+        "endpoint": "endpoint1",
+        "secret": "yoursecret2"
+    }
+]
